@@ -3,7 +3,7 @@
 This is a snakemake pipeline to assemble and annotate a fastq of bacterial reads.
 
 ## Create conda environment
-you can create a new environment by using [Plasmidsaurus_env.yml](workflow/envs/) and run
+you can create a new environment by using [Plasmidsaurus_env.yml](workflow/envs/Plasmidsaurus_env.yml) and run
 
 ```
 conda env create -f workflow/envs/Plasmidsaurus_env.yml
