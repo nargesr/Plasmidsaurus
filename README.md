@@ -24,11 +24,11 @@ All the Expected output will be available here: `results`
 
 For this specific input, all the outputs would be here: `results/SRR30810013/*`
 
-- Main output:
+- Main outputs:
   - annotated genome GFF file: `results/SRR30810013/annotation_SRR30810013.gff`
   - annotated genome gbk file: `results/SRR30810013/annotation_SRR30810013.gbk`
   - Polished assemble genome: `results/SRR30810013/polish_assembly_SRR30810013.fasta`
 
-- Reports:
+- Useful Reports:
   - Preprocess and quality control of given reads: `results/SRR30810013/fastplong_SRR30810013.html` and `results/SRR30810013/fastplong_SRR30810013.json`
   - Assemble genome information (such as length or coverage): `results/SRR30810013/assembly_info.txt`
