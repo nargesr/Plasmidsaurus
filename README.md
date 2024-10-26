@@ -20,14 +20,15 @@ To change number of CPUs, please modify `n_cpus` at [config file](config/config.
 
 ### Expected outputs
 
-All the Expected output will be available here: `results/SRR30810013`
+All the Expected output will be available here: `results`
 
-- annotated genome GFF file: `results/SRR30810013/annotation_SRR30810013.gff`
-- annotated genome gbk file: `results/SRR30810013/annotation_SRR30810013.gbk`
+For this specific input, all the outputs would be here: `results/SRR30810013/*`
 
-Additional useful outputs:
+- Main output:
+  - annotated genome GFF file: `results/SRR30810013/annotation_SRR30810013.gff`
+  - annotated genome gbk file: `results/SRR30810013/annotation_SRR30810013.gbk`
+  - Polished assemble genome: `results/SRR30810013/polish_assembly_SRR30810013.fasta`
 
 - Reports:
   - Preprocess and quality control of given reads: `results/SRR30810013/fastplong_SRR30810013.html` and `results/SRR30810013/fastplong_SRR30810013.json`
-  - Assemble genome information about contigs (such as length or coverage): `results/SRR30810013/assembly_info.txt`
-- Polished assemble genome: `results/SRR30810013/polish_assembly_SRR30810013.fasta`
+  - Assemble genome information (such as length or coverage): `results/SRR30810013/assembly_info.txt`
