@@ -1,0 +1,26 @@
+configfile: "config/config.yaml"
+
+
+##### load rules #####
+include: "rules/preprocess.smk"
+include: "rules/prepare_genome.smk"
+
+##### target rules #####
+rule all:
+    input:
+        expand(f"{config['output_dir']}/{{sample_name}}/clean_{{sample_name}}.fastq.gz",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/fastplong_{{sample_name}}.html",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/fastplong_{{sample_name}}.json",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/assembly.fasta",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/polish_assembly_{{sample_name}}.fasta",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/alignment_{{sample_name}}.paf",
+           sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/assembly_info.txt",
+            sample_name=config["sample_names"]),
+        expand(f"{config['output_dir']}/{{sample_name}}/annotation_{{sample_name}}.gff",
+            sample_name=config["sample_names"]),

@@ -1,0 +1,10 @@
+n_cpus: 8 # Threads
+
+# Define directory containing fastq files
+fastq_dir : "resources"
+
+# Define directory containing outputs for each sample/fastq
+output_dir : "results"
+
+# Define the sample name(s) as a list
+sample_names: ["SRR30810013"]
